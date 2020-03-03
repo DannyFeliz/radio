@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <fieldset>
+      Gender: {{ gender }}
+      <legend>Radio</legend>
+      <Radio @input="handleChange" name="gender" :checked="true" value="male">
+        Male
+      </Radio>
+      <Radio @input="handleChange" name="gender" value="female">
+        Female
+      </Radio>
+    </fieldset>
+
+    <fieldset>
+      <legend>Editor</legend>
+      <p>Editors: {{ editors.join(", ") }}</p>
+      <Checkbox @input="handleCheckbox" name="editor" value="code">
+        Code
+      </Checkbox>
+
+      <Checkbox @input="handleCheckbox" name="editor" value="vim">
+        VIM
+      </Checkbox>
+    </fieldset>
+    <input type="checkbox" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import Radio from "./components/Radio.vue";
+// import Checkbox from "./components/Checkbox.vue";
+import { Radio, Checkbox } from "./components/UI";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Radio,
+    Checkbox
   }
-}
+};
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
