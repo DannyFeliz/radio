@@ -1,9 +1,6 @@
 {
   "name": "ui-acme",
   "version": "0.1.5",
-  "publishConfig": {
-    "access": "public"
-  },
   "site": "https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free",
   "sideEffects": [
     "*.vue"
