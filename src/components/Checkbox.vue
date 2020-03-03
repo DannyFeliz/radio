@@ -12,7 +12,9 @@
           <polyline points="1 6.29411765 4.5 10 11 1" />
         </svg>
       </span>
-      <span><slot /></span>
+      <span>
+        <slot />
+      </span>
     </label>
   </span>
 </template>

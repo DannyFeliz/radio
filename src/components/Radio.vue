@@ -8,7 +8,9 @@
         :id="`radio-${id}`"
       />
       <span class="radio"></span>
-      <span><slot /></span>
+      <span>
+        <slot />
+      </span>
     </label>
   </span>
 </template>
