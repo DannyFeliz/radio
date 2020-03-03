@@ -27,8 +27,6 @@
 </template>
 
 <script>
-// import Radio from "./components/Radio.vue";
-// import Checkbox from "./components/Checkbox.vue";
 import { Radio, Checkbox } from "./components/UI";
 export default {
   name: "App",
