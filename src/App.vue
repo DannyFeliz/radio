@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import { Radio, Checkbox } from "./components/UI";
+import { /*  Radio, */ Checkbox } from "./components/UI";
 import GenderChooser from "./components/GenderChooser";
 export default {
   name: "App",
   components: {
-    Radio,
+    // Radio,
     Checkbox,
     GenderChooser
   },
