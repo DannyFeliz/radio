@@ -41,9 +41,9 @@
   "main": "./dist/GenderChooser.umd.min.js",
   "author": "Danny Feliz <dannyfeliz08@gmail.com>",
   "license": "MIT",
-  "bugs": "https://github.com/DannyFeliz/ui-acme-2/issues/new",
+  "bugs": "https://github.com/DannyFeliz/acme-ui/issues/new",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DannyFeliz/ui-acme-2"
+    "url": "https://github.com/DannyFeliz/acme-ui"
   }
 }
