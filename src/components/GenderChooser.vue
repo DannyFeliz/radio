@@ -5,7 +5,7 @@
       @input="handleGender"
       name="gender"
       value="Male"
-      :checked="$attrs.value == 'Male'"
+      :checked="$attrs.value === 'Male'"
       >Male</Radio
     >
 
@@ -13,7 +13,7 @@
       @input="handleGender"
       name="gender"
       value="Female"
-      :checked="$attrs.value == 'Female'"
+      :checked="$attrs.value === 'Female'"
       >Female</Radio
     >
   </fieldset>
