@@ -2,8 +2,7 @@
   "name": "ui-acme-2",
   "version": "0.1.11",
   "files": [
-    "dist/GenderChooser.umd.min.js",
-    "dist/GenderChooser.css"
+    "dist/GenderChooser.umd.min.js"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,7 +10,7 @@
     "lint": "vue-cli-service lint",
     "release": "np",
     "version": "npm run lint",
-    "export": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name GenderChooser ./src/components/GenderChooser.vue"
+    "build-lib": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name GenderChooser ./src/components/GenderChooser.vue"
   },
   "dependencies": {
     "vue": "^2.6.11"
