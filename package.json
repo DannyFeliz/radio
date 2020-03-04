@@ -1,6 +1,10 @@
 {
   "name": "ui-acme-2",
   "version": "0.1.9",
+  "files": [
+    "dist/GenderChooser.umd.min.js",
+    "dist/GenderChooser.umd.js.min.map"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -28,5 +32,22 @@
   "sideEffects": [
     "*.vue"
   ],
-  "site": "https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free"
+  "keywords": [
+    "vue",
+    "vue-gender",
+    "vue-gender-chooser",
+    "gender-chooser"
+  ],
+  "main": "./dist/GenderChooser.umd.min.js",
+  "files": [
+    "dist/GenderChooser.umd.min.js",
+    "dist/GenderChooser.css"
+  ],
+  "author": "Danny Feliz <dannyfeliz08@gmail.com>",
+  "license": "MIT",
+  "bugs": "https://github.com/DannyFeliz/ui-acme-2/issues/new",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DannyFeliz/ui-acme-2"
+  }
 }
