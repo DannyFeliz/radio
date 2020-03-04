@@ -1,22 +1,29 @@
 {
   "name": "ui-acme",
   "version": "0.1.6",
-  "site": "https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free",
-  "sideEffects": [
-    "*.vue"
-  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
     "export": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name GenderChooser ./src/components/GenderChooser.vue"
   },
   "dependencies": {
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@vue/cli-plugin-eslint": "^4.2.3",
     "@vue/cli-service": "~4.2.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "prettier": "^1.19.1",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "sideEffects": [
+    "*.vue"
+  ],
+  "site": "https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free"
 }
