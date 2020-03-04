@@ -5,6 +5,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "release": "np",
+    "version": "npm run lint",
     "export": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name GenderChooser ./src/components/GenderChooser.vue"
   },
   "dependencies": {
@@ -17,6 +19,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
+    "np": "^6.2.0",
     "prettier": "^1.19.1",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
