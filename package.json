@@ -1,9 +1,9 @@
 {
   "name": "ui-acme-2",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "files": [
     "dist/GenderChooser.umd.min.js",
-    "dist/GenderChooser.umd.js.min.map"
+    "dist/GenderChooser.css"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -39,10 +39,6 @@
     "gender-chooser"
   ],
   "main": "./dist/GenderChooser.umd.min.js",
-  "files": [
-    "dist/GenderChooser.umd.min.js",
-    "dist/GenderChooser.css"
-  ],
   "author": "Danny Feliz <dannyfeliz08@gmail.com>",
   "license": "MIT",
   "bugs": "https://github.com/DannyFeliz/ui-acme-2/issues/new",
