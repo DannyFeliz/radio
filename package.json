@@ -1,6 +1,6 @@
 {
   "name": "ui-acme-2",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "files": [
     "dist/GenderChooser.umd.min.js",
     "dist/GenderChooser.css"
