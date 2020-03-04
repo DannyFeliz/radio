@@ -1,26 +1,13 @@
 <template>
   <div id="app">
-    <fieldset>
-      Gender: {{ gender }}
-      <legend>Radio</legend>
-      <Radio @input="handleChange" name="gender" :checked="true" value="male">
-        Male
-      </Radio>
-      <Radio @input="handleChange" name="gender" value="female">
-        Female
-      </Radio>
-    </fieldset>
+    <p>Current Gender: {{ currentGender }}</p>
+    <GenderChooser v-model="currentGender" />
 
     <fieldset>
       <legend>Editor</legend>
-      <p>Editors: {{ editors.join(", ") }}</p>
-      <Checkbox @input="handleCheckbox" name="editor" value="code">
-        Code
-      </Checkbox>
+      <Checkbox name="editor" value="code">DO</Checkbox>
 
-      <Checkbox @input="handleCheckbox" name="editor" value="vim">
-        VIM
-      </Checkbox>
+      <Checkbox name="editor" value="vim">VIM</Checkbox>
     </fieldset>
     <input type="checkbox" />
   </div>
@@ -28,11 +15,18 @@
 
 <script>
 import { Radio, Checkbox } from "./components/UI";
+import GenderChooser from "./components/GenderChooser";
 export default {
   name: "App",
   components: {
     Radio,
-    Checkbox
+    Checkbox,
+    GenderChooser
+  },
+  data() {
+    return {
+      currentGender: "Female"
+    };
   }
 };
 </script>

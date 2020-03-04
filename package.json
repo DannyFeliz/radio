@@ -8,7 +8,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "export": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name ui ./src/components/UI.js"
+    "export": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name GenderChooser ./src/components/GenderChooser.vue"
   },
   "dependencies": {
     "vue": "^2.6.11"
