@@ -1,16 +1,9 @@
 <template>
   <span class="ui-acme-container">
-    <label :for="`radio-${id}`">
-      <input
-        v-bind="$attrs"
-        v-on="$listeners"
-        type="radio"
-        :id="`radio-${id}`"
-      />
+    <label :for="`radio-input`">
+      <input type="radio" :id="`radio-input`" />
       <span class="radio"></span>
-      <span>
-        <slot />
-      </span>
+      <span>Radio</span>
     </label>
   </span>
 </template>

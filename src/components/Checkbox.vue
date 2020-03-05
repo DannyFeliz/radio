@@ -1,34 +1,20 @@
 <template>
   <span class="ui-acme-container">
-    <label :for="`checkbox-${id}`">
-      <input
-        v-bind="$attrs"
-        v-on="$listeners"
-        type="checkbox"
-        :id="`checkbox-${id}`"
-      />
+    <label :for="`checkbox-input`">
+      <input type="checkbox" :id="`checkbox-input`" />
       <span class="checkbox">
         <svg width="12px" height="11px" viewBox="0 0 12 11">
           <polyline points="1 6.29411765 4.5 10 11 1" />
         </svg>
       </span>
-      <span>
-        <slot />
-      </span>
+      <span>Checkbox</span>
     </label>
   </span>
 </template>
 
 <script>
 export default {
-  name: "Checkbox",
-  data() {
-    return {
-      id: Math.random()
-        .toString(16)
-        .substring(2)
-    };
-  }
+  name: "Checkbox"
 };
 </script>
 
