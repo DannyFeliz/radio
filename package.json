@@ -9,7 +9,6 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
     "release": "np",
     "version": "npm run lint",
     "lib": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name PackageName ./src/components/PackageName.vue"
@@ -18,7 +17,6 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-eslint": "^4.2.3",
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "eslint": "^6.7.2",
