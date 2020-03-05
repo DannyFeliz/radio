@@ -82,6 +82,8 @@ module.exports = {
 ],
 ```
 
-### After build
+### Publish
 
-Show the compiled js and css
+- Show the compiled js and css
+- Exaplain everything in the package json
+- Show sourcemap

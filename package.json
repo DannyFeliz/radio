@@ -1,9 +1,10 @@
 {
-  "name": "ui-acme-2",
-  "version": "0.1.13",
+  "name": "package-name",
+  "version": "0.0.1",
+  "description": "description",
   "files": [
-    "dist/GenderChooser.umd.min.js",
-    "dist/GenderChooser.umd.min.js.map"
+    "dist/package-name.umd.min.js",
+    "dist/package-name.umd.min.js.map"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,7 +12,7 @@
     "lint": "vue-cli-service lint",
     "release": "np",
     "version": "npm run lint",
-    "build-lib": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name GenderChooser ./src/components/GenderChooser.vue"
+    "lib": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name PackageName ./src/components/PackageName.vue"
   },
   "dependencies": {
     "vue": "^2.6.11"
@@ -29,21 +30,15 @@
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
-  "sideEffects": [
-    "*.vue"
-  ],
   "keywords": [
-    "vue",
-    "vue-gender",
-    "vue-gender-chooser",
-    "gender-chooser"
+    "vue"
   ],
-  "main": "./dist/GenderChooser.umd.min.js",
+  "main": "./dist/package-name.umd.min.js",
   "author": "Danny Feliz <dannyfeliz08@gmail.com>",
   "license": "MIT",
-  "bugs": "https://github.com/DannyFeliz/acme-ui/issues/new",
+  "bugs": "https://github.com/DannyFeliz/package-name/issues/new",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DannyFeliz/acme-ui"
+    "url": "https://github.com/DannyFeliz/package-name"
   }
 }
