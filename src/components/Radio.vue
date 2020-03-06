@@ -1,9 +1,16 @@
 <template>
   <span class="ui-acme-container">
     <label :for="`radio-input`">
-      <input type="radio" :id="`radio-input`" />
+      <input
+        v-bind="$attrs"
+        v-on="$listeners"
+        type="radio"
+        :id="`radio-${id}`"
+      />
       <span class="radio"></span>
-      <span>Radio</span>
+      <span>
+        <slot />
+      </span>
     </label>
   </span>
 </template>
@@ -15,7 +22,7 @@ export default {
     return {
       id: Math.random()
         .toString(16)
-        .substring(2)
+        .substr(2)
     };
   }
 };

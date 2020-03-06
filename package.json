@@ -1,22 +1,26 @@
 {
-  "name": "package-name",
-  "version": "0.0.1",
-  "description": "description",
-  "files": [
-    "dist/package-name.umd.min.js",
-    "dist/package-name.umd.min.js.map"
-  ],
+  "name": "mac-ui",
+  "version": "1.0.0",
+  "description": "A simple radio",
+  "author": "Danny Feliz <dannyfeliz08@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name Radio ./src/components/Radio.vue",
     "release": "np",
-    "version": "npm run lint",
-    "lib": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name PackageName ./src/components/PackageName.vue"
+    "version": "npm run lint"
   },
+  "main": "./dist/Radio.umd.min.js",
+  "files": [
+    "dist/radio.umd.min.js",
+    "dist/radio.umd.min.js.map"
+  ],
   "dependencies": {
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@vue/cli-plugin-eslint": "^4.2.3",
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "eslint": "^6.7.2",
@@ -28,15 +32,14 @@
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
+  "bugs": "https://github.com/DannyFeliz/radio/issues/new",
   "keywords": [
-    "vue"
+    "vue",
+    "radio"
   ],
-  "main": "./dist/package-name.umd.min.js",
-  "author": "Danny Feliz <dannyfeliz08@gmail.com>",
   "license": "MIT",
-  "bugs": "https://github.com/DannyFeliz/package-name/issues/new",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DannyFeliz/package-name"
+    "url": "https://github.com/DannyFeliz/radio"
   }
 }

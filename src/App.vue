@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <Radio />
-    <Checkbox />
+    <p>Gender: {{ currentGender }}</p>
+    <GenderChooser v-model="currentGender" />
   </div>
 </template>
 
 <script>
-import Radio from "./components/Radio";
-import Checkbox from "./components/Checkbox";
+// import Radio from "./components/Radio";
+// import Checkbox from "./components/Checkbox";
+import GenderChooser from "./components/GenderChooser";
 
 export default {
   name: "App",
   components: {
-    Radio,
-    Checkbox
+    GenderChooser
+  },
+  data() {
+    return {
+      currentGender: "Female"
+    };
   }
 };
 </script>
