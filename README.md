@@ -1,17 +1,17 @@
-# package-name
+# mac-ui
 
-> Description
+> Simple mac ui componets
 
 # Demo
 
 # Installation
 
 ```bash
-$ npm install package-name --save
+$ npm install mac-ui --save
 
 # or with yarn
 
-$ yarn add package-name
+$ yarn add mac-ui
 ```
 
 # Usage
@@ -19,17 +19,14 @@ $ yarn add package-name
 ```html
 <template>
   <div>
-
+    <MacUi>Female</MacUi>
   <div>
 </template>
 <script>
-  import PackageName from "package-name";
+  import MacUi from "mac-ui";
   export default {
     components: {
-      PackageName
-    },
-    data() {
-      return {}
+      MacUi
     }
   }
 </script>
@@ -49,11 +46,11 @@ $ yarn add package-name
   </thead>
   <tbody>
     <tr>
-      <td>prop</td>
-      <td>type</td>
-      <td>default</td>
+      <td>Title</td>
+      <td>String</td>
+      <td>""</td>
       <td>No</td>
-      <td>Description</td>
+      <td>The next to the radio</td>
     </tr>
   </tbody>
 </table>
