@@ -16,7 +16,6 @@
 </template>
 
 <script>
-const abc = "hello"
 export default {
   name: "Radio",
   data() {
